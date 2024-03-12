@@ -1,0 +1,44 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 0.5s;
+    //"maozinha" hora que passa em ciam do button
+    cursor: pointer;
+
+    &.btn-primary,
+    &.btn-secundary{
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 7px;
+    }
+
+
+    &.btn-primary{
+        color: var(--black-010);
+        background: var(--primary);
+    }
+    //quando passa o mouse por cima
+    &:hover{
+        background: var(--primary-010);
+        color: var(--black);
+    }
+
+
+    &.btn-secundary{
+        color: var(--white);
+        background:#0e76a8;
+    }
+
+    //quando passa o mouse por cima
+    // &:hover{
+    //     background: rgb(2, 2, 97);
+    //     color: var(--black);
+    // }
+
+    &.btn-secundary:hover{
+        background: rgb(9, 9, 197);
+        color: var(--white);
+    }
+}
