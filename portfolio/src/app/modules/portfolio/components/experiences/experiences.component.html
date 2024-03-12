@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Ultimas Experiências</h2>
+    @for (item of arrayExperiences(); track item) {
+    <details>
+        <summary>
+            <p>
+            <strong>{{ item.summary.strong }}</strong>
+            Valor Y
+            </p>
+        </summary>
+        <article [innerHTML]="item.text"></article>
+    </details>
+}
+</div>
