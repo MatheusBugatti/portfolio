@@ -1,0 +1,111 @@
+:host{
+    //esse seletor (antes)
+    &::before{
+        content: '';
+        display: flex;
+        width: 100%;
+        height: 150px;
+        margin-bottom: -80px;
+        background: var(--primary);
+        //colocar margem só na parte de baixo
+        border-bottom: 4px solid var(--white);
+    }
+
+    header, aside{
+    
+        display: flex;
+        //vai ser por coluna
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    header{
+        h1{
+            font-weight: 600;
+        }
+        img{
+            border-radius: 100px;
+            border: 4px solid var(--white);
+            margin-bottom: 15px;
+        }
+    }
+
+    aside{
+        p{
+            color: white;
+            text-align: center;
+            font-weight: 400;
+        }
+        //juntando nav ul e section pois tem as mesmas "configurações"
+        nav ul, section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 30px
+    }
+    nav{
+        margin: 20px 0;
+            li{
+                a{
+                    width: 250px;
+                }
+            }
+    }
+    section{
+        figure{
+            width: 335px;
+            height: 77px;
+
+            margin: 0;
+            padding: 0;
+            display: flex;
+            //centralizando na vertical e na horizontal
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            border: 1px solid var(--white);
+            //arredondando bordas
+            border-radius: 7px;
+
+            figcaption{
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    p{
+                        margin: 3px;
+                    }
+                    strong{
+                        color: var(--primary);
+                    }
+                }
+            }
+        }
+    }
+    }
+
+    //tirando erro de quebra de linhas 
+    @media (max-width: 750px){
+        aside nav ul, 
+        section{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15 px;
+            }
+        aside nav ul li,
+        aside nav ul li a,
+        section figure{
+            width: 100%;
+        }
+        
+    }
+      
+    
+}
+
