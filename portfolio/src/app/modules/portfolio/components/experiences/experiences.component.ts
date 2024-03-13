@@ -17,14 +17,14 @@ export class ExperiencesComponent {
         strong: "Estágio Central de serviços",
         p: "MazaTarraf | Nov 2023 - Present",
         },
-        text: "<p>só um texto de teste</p>"
+        text: "só um texto de teste"
       },
     {
       summary: {
         strong: "Designer Grafico",
         p: "Autonomo | Nov 2022 - Present",
         },
-        text: "<p>só um texto de teste tambem </p>"
+        text: "só um texto de teste"
       }
   ])
 }
