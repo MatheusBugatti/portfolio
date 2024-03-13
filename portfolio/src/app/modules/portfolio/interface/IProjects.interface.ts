@@ -8,7 +8,7 @@ export interface IProjects{
     links: [
         {
         name: string,
-        href: string
+        href: string,
         },
     ];
 }
